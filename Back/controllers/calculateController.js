@@ -6,7 +6,7 @@ exports.calculate = (req, res) => {
     const expression = req.body.expression;
     console.log(expression);
 
-    const calculatorPath = path.join(__dirname, '../cpp/calculator'); // Use absolute path for clarity
+    const calculatorPath = path.join(__dirname, '../cpp/calc.exe'); // Use absolute path for clarity
 
     exec(`${calculatorPath} "${expression}"`, (error, stdout, stderr) => {
         if (error) {
