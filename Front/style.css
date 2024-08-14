@@ -47,3 +47,15 @@ body {
 .buttons button:hover {
     background-color: #ddd;
 }
+
+input[readonly] {
+    background-color: #f0f0f0; /* Make the background look like it's disabled */
+    border: none; /* Optional: remove the border for a cleaner look */
+    text-align: right; /* Align text to the right */
+    cursor: default; /* Set cursor to default */
+}
+
+input[readonly]:focus {
+    outline: none; /* Remove the outline when focused */
+}
+
